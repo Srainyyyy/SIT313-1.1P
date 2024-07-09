@@ -1,0 +1,153 @@
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 导航菜单样式 */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* 头部样式 */
+header {
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    opacity: 0; 
+}
+
+header:hover .header-overlay {
+    opacity: 1; 
+}
+
+
+/* 分隔符样式 */
+hr {
+    border: 0;
+    height: 1px;
+    background: #024031;
+    margin: 20px 0;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 关于部分样式 */
+#about {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.job-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* 作品部分样式 */
+#work {
+    padding: 20px;
+    text-align: center;
+}
+
+#work h2 {
+    margin-bottom: 20px;
+}
+
+#work .project {
+    margin-bottom: 30px;
+}
+
+#work .project img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#work .project h3 {
+    margin: 10px 0;
+}
+
+#work .project p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 图片库部分样式 */
+#gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    margin-bottom: 20px;
+}
+
+#gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#gallery .gallery img {
+    flex: 1 1 calc(33.333% - 20px);
+    width: calc(33.333% - 20px);
+    height: auto;
+    max-width: 300px;
+}
+
+@media (max-width: 600px) {
+    #gallery .gallery img {
+        flex: 1 1 calc(50% - 10px);
+        width: calc(50% - 10px);
+    }
+}
